@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container" class="container">
+        <div id="gameArea" class="game-area">
+            <div id="grid" class="grid">
+                <!-- Buttons/boxes are placed in here -->
+            </div>
+            <div class="score-area">
+                <h1>Score</h1>
+                <p id="score">0</p>
+                <div>
+                    <h2>Next Colour</h2>
+                    <div id="nextColour" class="box"></div>
+                </div>
+            </div>
+        </div>
+        <div id="hint">
+            <p class="hint">"The faster you are the more score you get"</p>
+        </div>
+        <div id="gameOver" class="game-over">
+            <h1>Game Over</h1>
+            <p>Final Score: <span id="finalScore">100</span></p>
+            <button class="box button-play-again" onClick="playAgain()">Play Again</button>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

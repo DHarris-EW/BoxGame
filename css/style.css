@@ -1,0 +1,111 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #d7c6c6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: white;
+    border-radius: 5px;
+}
+
+.game-area {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    height: 500px;
+    width: 500px;
+}
+
+.score-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 200px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.score-area > h1, span {
+    margin-bottom: 20px;
+}
+
+.hint {
+    margin-top: 50px;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 5rem;
+    margin: 0;
+}
+
+h2, p {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.box {
+    border-radius: 15px;
+    transition: all 200ms;
+}
+
+.box:hover {
+    border: 1px solid black;
+    transform: translateY(-5px);
+}
+
+.winner{
+    pointer-events: none;
+    border: 3px solid black;
+    transform: scale(0.5);
+}
+
+.game-over {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 700px;
+    text-align: center;
+}
+
+.game-over > *:not(:last-child) {
+    margin-bottom: 50px;
+}
+
+button {
+    outline: none;
+    border: 0 ;
+}
+
+button:active {
+  border-style: outset;
+}
+
+.button-play-again {
+    width: 200px;
+    height: 50px;
+    background: #fde715;
+    font-weight: bold;
+}
